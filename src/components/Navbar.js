@@ -1,7 +1,10 @@
 import React from "react";
 
 const Navbar = ({ theme, toggleTheme }) => (
-  <nav className={`navbar navbar-expand-lg ${theme === "light" ? "navbar-light bg-light" : "navbar-dark bg-dark"} fixed-top shadow`}>
+  <nav
+    className={`navbar navbar-expand-lg ${theme === "light" ? "navbar-light bg-light" : "navbar-dark bg-dark"} fixed-top shadow`}
+    style={{ zIndex: 1100 }} // <-- Asegura que sea mayor que el sidebar
+  >
     <div className="container-fluid">
       <a className="navbar-brand d-flex align-items-center" href="#">
         <img
@@ -47,9 +50,17 @@ const Navbar = ({ theme, toggleTheme }) => (
           <span>Usuario</span>
         </div>
         <button
-          className={`btn btn-${theme === "light" ? "outline-dark" : "outline-light"} rounded-circle`}
+          className={`btn btn-${theme === "light" ? "outline-dark" : "outline-light"} d-flex align-items-center justify-content-center p-0`}
           onClick={toggleTheme}
           title="Cambiar tema"
+          style={{
+            width: "40px",
+            height: "40px",
+            borderRadius: "50%",
+            fontSize: "1.5rem",
+            minWidth: "40px",
+            minHeight: "40px"
+          }}
         >
           {theme === "light" ? "🌙" : "☀️"}
         </button>
