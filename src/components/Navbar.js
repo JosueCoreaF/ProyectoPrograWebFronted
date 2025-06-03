@@ -96,7 +96,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           style={{ width: 32, height: 32, borderRadius: "50%" }}
         />
         <span style={{ fontWeight: 700, fontSize: "1.2rem" }}>
-          Juegos Zozo
+          NovaTech
         </span>
       </div>
       <div style={navLinksContainerStyle}>
