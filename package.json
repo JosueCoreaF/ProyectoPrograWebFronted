@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start":  "start parcel public/index.html",
+    "start": "parcel public/index.html",
     "build": "parcel build public/index.html"
   },
   "dependencies": {

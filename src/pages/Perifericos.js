@@ -1,4 +1,3 @@
-// src/pages/Perifericos.js
 import React from 'react';
 
  function Perifericos() {

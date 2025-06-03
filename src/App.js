@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
-//import Sidebar from './components/Sidebar';
+import Sidebar from './components/Sidebar';
 import Perifericos from './pages/Perifericos';
 // import Audifonos from './pages/Audifonos';
 // import PCsArmadas from './pages/PCsArmadas';
@@ -19,6 +19,7 @@ function App() {
         <Router>
             <div style={appStyle}>
                 <Navbar />
+                <Sidebar />
                 
                 <div style={{ marginTop: '55px', marginLeft: '220px', padding: '20px' }}>
                     <Routes>
