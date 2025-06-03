@@ -24,8 +24,7 @@ const Navbar = ({ theme, toggleTheme }) => {
   const iconBg = theme === "light" ? "#7f53ac" : "#7f53ac";
 
   return (
-    <nav
-      className="navbar navbar-expand-lg fixed-top"
+    <nav className="navbar navbar-expand-lg fixed-top"
       style={{
         background: theme === "light" ? "#fff" : "#181c2f",
         boxShadow: "0 4px 24px rgba(44,62,80,0.10)",
@@ -35,8 +34,7 @@ const Navbar = ({ theme, toggleTheme }) => {
       }}
     >
       <div className="container-fluid">
-        <span
-          className="navbar-brand fw-bold"
+        <span className="navbar-brand fw-bold"
           style={{
             cursor: "pointer",
             background: btnBg,
@@ -56,7 +54,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             height={28}
             style={{ borderRadius: "50%" }}
           />
-          Gamer Store
+          NovaTech
         </span>
         <div className="collapse navbar-collapse justify-content-center" id="mainNav">
           <ul className="navbar-nav mb-2 mb-lg-0 gap-3">
