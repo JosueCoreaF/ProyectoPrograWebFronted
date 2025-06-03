@@ -11,7 +11,7 @@ const Navbar = ({ theme, toggleTheme }) => (
           height="32"
           className="rounded-circle me-2"
         />
-        <span>Juegos Zozo</span>
+        <span>NovaTech</span>
       </a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span className="navbar-toggler-icon"></span>
