@@ -13,13 +13,12 @@ function App() {
         setTheme(theme === "light" ? "dark" : "light");
     };
 
-    // Estilos globales para los temas
     const appStyle = theme === "light"
-        ? { background: "#f0f0ff", minHeight: "100vh", color: "#222" }
+        ? { background: "#f8faff", minHeight: "100vh", color: "#222" }
         : {
             background: "linear-gradient(135deg, #0f2027 0%, #2c5364 100%)",
             minHeight: "100vh",
-            color: "#fff" // Cambia el color de texto a blanco en modo oscuro
+            color: "#fff"
         };
 
     return (
@@ -27,7 +26,7 @@ function App() {
             <div style={appStyle}>
                 <Navbar theme={theme} toggleTheme={toggleTheme} />
                 <Sidebar theme={theme} />
-                <div style={{ marginTop: '60px', marginLeft: '220px' ,padding: '20px' }}>
+                <div style={{ marginTop: '50px', marginLeft: '0', padding: '20px' }}>
                     <Routes>
                         <Route path="/*" element={<Home />} />
                     </Routes>
